@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Millas a Metros
 //
-//  Created by Santiago José González Rúa on 12/3/17.
+//  Created by Santiago José González Rúa on 13/3/17.
 //  Copyright © 2017 Santiago José González Rúa. All rights reserved.
 //
 
