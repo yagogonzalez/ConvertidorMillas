@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Millas_a_Metros" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conversor de distancias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHz-fU-fgK">
+                                <rect key="frame" x="9.5" y="48" width="301" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Distancia a convertir" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CJ6-8W-Bo2">
+                                <rect key="frame" x="16" y="106.5" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GbS-PZ-Pp8">
+                                <rect key="frame" x="76.5" y="174.5" width="167" height="29"/>
+                                <segments>
+                                    <segment title="Km"/>
+                                    <segment title="Millas"/>
+                                    <segment title="Yardas"/>
+                                </segments>
+                                <color key="tintColor" red="0.0" green="0.56588855419999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unidad de entrada" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xO5-z9-BiY">
+                                <rect key="frame" x="92" y="145" width="136.5" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unidad de salida" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-2u-nOU">
+                                <rect key="frame" x="99" y="217" width="122.5" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnQ-su-of0">
+                                <rect key="frame" x="16" y="289" width="288" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62S-4N-H9e">
+                                <rect key="frame" x="16" y="318" width="288" height="42"/>
+                                <color key="backgroundColor" red="0.0" green="0.56588855419999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="16l-w2-JG2"/>
+                                    <constraint firstAttribute="height" constant="127" id="dGd-NG-E9f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Convertir">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dGd-NG-E9f"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="16l-w2-JG2"/>
+                                        <include reference="dGd-NG-E9f"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="convertPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6iY-p1-GcT"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VQ1-eI-qmG">
+                                <rect key="frame" x="76.5" y="246.5" width="167" height="29"/>
+                                <segments>
+                                    <segment title="Km"/>
+                                    <segment title="Millas"/>
+                                    <segment title="Yardas"/>
+                                </segments>
+                                <color key="tintColor" red="0.0" green="0.56588855419999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88450006321162289" green="0.93465979761142448" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0XM-2u-nOU" firstAttribute="top" secondItem="GbS-PZ-Pp8" secondAttribute="bottom" constant="15" id="0ls-3n-fMp"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="CJ6-8W-Bo2" secondAttribute="leading" id="22D-Jh-0kJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fnQ-su-of0" secondAttribute="trailing" id="251-Y4-a7a"/>
+                            <constraint firstItem="fnQ-su-of0" firstAttribute="top" secondItem="VQ1-eI-qmG" secondAttribute="bottom" constant="15" id="DD1-Xy-2qE"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="62S-4N-H9e" secondAttribute="leading" id="HgV-r5-4da"/>
+                            <constraint firstItem="fnQ-su-of0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KaP-6M-Vlh"/>
+                            <constraint firstItem="bHz-fU-fgK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="M8M-bn-Zng"/>
+                            <constraint firstItem="62S-4N-H9e" firstAttribute="top" secondItem="CJ6-8W-Bo2" secondAttribute="bottom" constant="25.5" id="OR2-SC-rL4"/>
+                            <constraint firstItem="bHz-fU-fgK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R62-ld-kee"/>
+                            <constraint firstItem="xO5-z9-BiY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V87-Hh-qDt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="62S-4N-H9e" secondAttribute="trailing" id="Vid-IL-hT3"/>
+                            <constraint firstItem="VQ1-eI-qmG" firstAttribute="top" secondItem="0XM-2u-nOU" secondAttribute="bottom" constant="8" id="W6i-yn-q4S"/>
+                            <constraint firstItem="62S-4N-H9e" firstAttribute="leading" secondItem="GbS-PZ-Pp8" secondAttribute="trailing" constant="37.5" id="XeB-5p-x2k"/>
+                            <constraint firstItem="CJ6-8W-Bo2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bTS-8T-mEr"/>
+                            <constraint firstItem="VQ1-eI-qmG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eDf-EA-c6H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CJ6-8W-Bo2" secondAttribute="trailing" id="isU-Ku-36Y"/>
+                            <constraint firstItem="62S-4N-H9e" firstAttribute="top" secondItem="fnQ-su-of0" secondAttribute="bottom" constant="8" id="m6z-kg-bVS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fnQ-su-of0" secondAttribute="leading" id="mCa-cY-u09"/>
+                            <constraint firstItem="GbS-PZ-Pp8" firstAttribute="top" secondItem="xO5-z9-BiY" secondAttribute="bottom" constant="8" id="oPd-9p-lGT"/>
+                            <constraint firstItem="xO5-z9-BiY" firstAttribute="top" secondItem="CJ6-8W-Bo2" secondAttribute="bottom" constant="9" id="pii-Pw-z5E"/>
+                            <constraint firstItem="CJ6-8W-Bo2" firstAttribute="top" secondItem="bHz-fU-fgK" secondAttribute="bottom" constant="27" id="x1x-ff-BSZ"/>
+                            <constraint firstItem="GbS-PZ-Pp8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yY2-8e-ggr"/>
+                            <constraint firstItem="0XM-2u-nOU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z8U-k5-g7E"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OR2-SC-rL4"/>
+                                <exclude reference="XeB-5p-x2k"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="HgV-r5-4da"/>
+                                <include reference="OR2-SC-rL4"/>
+                                <include reference="XeB-5p-x2k"/>
+                                <exclude reference="m6z-kg-bVS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="dataTextField" destination="CJ6-8W-Bo2" id="YwX-qv-vVt"/>
+                        <outlet property="resultLabel" destination="fnQ-su-of0" id="V6C-gp-4Nv"/>
+                        <outlet property="segmentedControl" destination="GbS-PZ-Pp8" id="kC1-fv-84E"/>
+                        <outlet property="segmentedControlOut" destination="VQ1-eI-qmG" id="JJ5-dR-nWl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="136.26760563380282"/>
+        </scene>
+    </scenes>
+</document>
